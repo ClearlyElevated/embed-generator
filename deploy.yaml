@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: embedgenerator
+  labels:
+    app: embedgenerator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: embedgenerator
+  template:
+    metadata:
+      labels:
+        app: embedgenerator
+    spec:
+      containers:
+      - name: embedgenerator
+        image: r.cfcr.io/{{CF_ACCOUNT}}/{{CF_REPO_NAME}}:{{CF_SHORT_REVISION}}
+        resources:
+            limits:
+                memory: 5Gi
+            requests:
+                memory: 3Gi
+      imagePullSecrets:
+      - name: regcred
