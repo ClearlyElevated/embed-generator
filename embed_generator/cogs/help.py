@@ -13,13 +13,14 @@ class Help(cmd.Cog):
 __**Embed Generator**__
 
 **- How do I use it?**
-<https://www.discord.club/tools/embed-generator/>
+<https://discord.club/embedg/>
 
 **- How do I mention someone or something?**
 <https://discordapp.com/developers/docs/reference#message-formatting-formats>
 
 **- Where and how can I use Markdown?**
-You can use markdown in the description and field values. <https://gist.github.com/ringmatthew/9f7bbfd102003963f9be7dbcf7d40e51>
+You can use markdown in the description and field values. 
+<https://gist.github.com/cblastin/432dc1bda68b0123b5b4a06c347f3c7b>
 
 <https://discord.club/discord>
             """)
