@@ -8,7 +8,6 @@ shard_ids = None
 prefix = ">"
 
 extensions = [
-    "cogs.edit",
     "cogs.help",
     "cogs.stats"
 ]
