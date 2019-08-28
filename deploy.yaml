@@ -27,3 +27,4 @@ spec:
             name: embed-generator
       imagePullSecrets:
       - name: regcred
+      priorityClassName: low
