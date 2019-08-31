@@ -7,7 +7,8 @@ class EmbedGenerator(cmd.AutoShardedBot):
         super().__init__(command_prefix=self._prefix_callable,
                          shard_count=self.config.shard_count,
                          shard_ids=self.config.shard_ids,
-                         fetch_offline_members=False)
+                         fetch_offline_members=False,
+                         guild_subscriptions=False)
 
         self.session = ClientSession(loop=self.loop)
         for ext in self.config.extensions:
