@@ -28,7 +28,7 @@ class Stats(cmd.Cog):
             await asyncio.sleep(60)
             try:
                 await self.bot.change_presence(activity=discord.Activity(
-                    name=f"{len(self.bot.guilds)} Servers | {self.bot.config.prefix}help",
+                    name=f"{self.bot.config.prefix}help",
                     type=discord.ActivityType.watching
                 ), afk=False)
                 await self.update_discordbots_org()
